@@ -9,7 +9,12 @@ export default function Amenities() {
           <span className="stay-with-us">Stay with us</span>
           <h2 className="amenities-heading">Amenities</h2>
           <p className="amenities-description">
-            Offering a perfect blend of luxury and convenience. Our well-appointed rooms and suites are designed to cater to all your needs, ensuring a restful stay. Enjoy world-class amenities and rejuvenating services, making your time with us truly memorable.
+            Offering a perfect blend of luxury and convenience. Our
+            well-appointed rooms and suites are designed to cater to all your
+            needs, ensuring a restful stay. Enjoy world-class amenities and
+            rejuvenating services, making your time with us truly memorable.ds,
+            ensuring a restful stay. Enjoy world-class amenities and
+            rejuvenating services, making your time with us truly memorable.
           </p>
           <button className="contact-btn">Contact</button>
         </div>
@@ -17,29 +22,59 @@ export default function Amenities() {
         <div className="amenities-list">
           <div className="list-column">
             <ul>
-              <li><FaRegCircle className="circle-icon" /> Spa</li>
-              <li><FaRegCircle className="circle-icon" /> Swimming Pool</li>
-              <li><FaRegCircle className="circle-icon" /> Gym</li>
-              <li><FaRegCircle className="circle-icon" /> Restaurant</li>
-              <li><FaRegCircle className="circle-icon" /> Indoor Games</li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Spa
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Swimming Pool
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Gym
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Restaurant
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Indoor Games
+              </li>
             </ul>
           </div>
           <div className="list-column">
             <ul>
-              <li><FaRegCircle className="circle-icon" /> Fireplace</li>
-              <li><FaRegCircle className="circle-icon" /> Jungle Safari</li>
-              <li><FaRegCircle className="circle-icon" /> Kids Play Area</li>
-              <li><FaRegCircle className="circle-icon" /> Lounge</li>
-              <li><FaRegCircle className="circle-icon" /> Steam and Sauna</li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Fireplace
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Jungle Safari
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Kids Play Area
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Lounge
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Steam and Sauna
+              </li>
             </ul>
           </div>
           <div className="list-column">
             <ul>
-              <li><FaRegCircle className="circle-icon" /> Yoga</li>
-              <li><FaRegCircle className="circle-icon" /> Car Parking</li>
-              <li><FaRegCircle className="circle-icon" /> 24×7 Power Backup</li>
-              <li><FaRegCircle className="circle-icon" /> CCTV Covered Premises</li>
-              <li><FaRegCircle className="circle-icon" /> 24×7 Security</li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Yoga
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Car Parking
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> 24×7 Power Backup
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> CCTV Covered Premises
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> 24×7 Security
+              </li>
             </ul>
           </div>
         </div>

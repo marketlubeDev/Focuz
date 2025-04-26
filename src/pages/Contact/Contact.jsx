@@ -13,11 +13,15 @@ export default function Contact() {
           <h3 className="info-heading">Get in touch</h3>
           <div className="info-item">
             <i className="fas fa-phone"></i>
-            <p>+91 1234567890</p>
+            <p>
+              <a href="tel:+911234567890">+91 1234567890</a>
+            </p>
           </div>
           <div className="info-item">
             <i className="fas fa-envelope"></i>
-            <p>info@focuz.com</p>
+            <p>
+              <a href="mailto:info@focuz.com">info@focuz.com</a>
+            </p>
           </div>
 
           <h3 className="info-heading">Location</h3>

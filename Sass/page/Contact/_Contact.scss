@@ -1,10 +1,19 @@
+@use "../../base/responsive" as responsive;
 .contact-container {
   padding: 4rem 9rem;
   border-bottom: 5rem solid #0a8046;
 
+  @include responsive.respond(smallPhone) {
+    padding: 2rem;
+  }
+
   .contact-header {
     text-align: center;
     margin-bottom: 3rem;
+
+    @include responsive.respond(smallPhone) {
+      margin-bottom: 1rem;
+    }
 
     .get-in-touch {
       font-size: 1.8rem;
@@ -12,12 +21,21 @@
       letter-spacing: 1px;
       display: block;
       margin-bottom: 1rem;
+
+      @include responsive.respond(smallPhone) {
+        font-size: 1.5rem;
+        margin-bottom: 0rem;
+      }
     }
 
     .contact-heading {
       font-size: 5rem;
       color: black;
       margin: 0;
+
+      @include responsive.respond(smallPhone) {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -32,16 +50,29 @@
       flex: 1;
       padding: 2rem;
 
+      @include responsive.respond(smallPhone) {
+        padding: 0;
+      }
+
       .info-heading {
         font-size: 1.8rem;
         color: #ca8e1e;
         margin-bottom: 1rem;
+
+        @include responsive.respond(smallPhone) {
+          font-size: 1.5rem;
+          margin-bottom: 0.1rem;
+        }
       }
 
       .info-item {
         display: flex;
         align-items: center;
         margin-bottom: 0.5rem;
+
+        @include responsive.respond(smallPhone) {
+          margin-bottom: 0.2rem;
+        }
 
         i {
           font-size: 1.5rem;
@@ -54,6 +85,10 @@
           color: #000;
           margin: 0;
           font-weight: 500;
+
+          @include responsive.respond(smallPhone) {
+            font-size: 1rem;
+          }
         }
       }
 
@@ -75,6 +110,10 @@
     .contact-form {
       flex: 1;
       padding: 2rem;
+
+      @include responsive.respond(smallPhone) {
+        padding: 0;
+      }
 
       .form-group {
         margin-bottom: 1.5rem;
@@ -118,6 +157,10 @@
         width: 20%;
         cursor: pointer;
         transition: all 0.3s ease;
+
+        @include responsive.respond(smallPhone) {
+          width: 100%;
+        }
 
         &:hover {
           background-color: #0a8046;

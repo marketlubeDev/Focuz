@@ -1,7 +1,13 @@
+@use "../../base/responsive" as responsive;
+
 .room-suits-section {
   background-color: white;
   padding: 4rem 9rem;
   width: 100%;
+
+  @include responsive.respond(smallPhone) {
+    padding: 2rem;
+  }
 }
 
 .room-suits-container {
@@ -9,13 +15,21 @@
   padding: 4rem 0;
   width: 100%;
 
+  @include responsive.respond(smallPhone) {
+    padding: 2rem 0;
+  }
   .room-suits-content {
-    // max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 8rem;
     padding: 0 3rem;
+
+    @include responsive.respond(smallPhone) {
+      flex-direction: column;
+      padding: 0 0.1rem;
+      gap: 2rem;
+    }
 
     .room-suits-image {
       flex: 1;
@@ -32,18 +46,31 @@
       flex: 1.1;
       padding: 2rem;
       width: 50%;
+      @include responsive.respond(smallPhone) {
+        width: 100%;
+        padding: 1;
+      }
       .stay-with-us {
         font-size: 1.5rem;
         color: #0a8046;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 700;
+
+        @include responsive.respond(smallPhone) {
+          font-size: 1.2rem;
+        }
       }
 
       .room-suits-heading {
         font-size: 4rem;
         margin: 1rem 0;
         color: #0a8046;
+
+        @include responsive.respond(smallPhone) {
+          font-size: 2.3rem;
+          margin: 0.3rem 0 1rem 0;
+        }
       }
 
       .room-suits-description {
@@ -52,6 +79,10 @@
         color: #000;
         margin-bottom: 2rem;
         font-weight: 600;
+
+        @include responsive.respond(smallPhone) {
+          font-size: 1.1rem;
+        }
       }
 
       .room-suits-buttons {
