@@ -156,4 +156,48 @@ a {
   color: #b58800;
 }
 
+.navbar {
+  background-color: white;
+  border-bottom: 0.7rem solid #0a8046;
+}
+.navbar__container {
+  margin: 0 auto;
+  padding: 1.5rem 5rem;
+}
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.navbar__menu {
+  display: flex;
+  gap: 2rem;
+}
+.navbar__menu-link {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.navbar__menu-link:hover {
+  color: #166534;
+}
+.navbar__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar__logo img {
+  height: 4rem;
+}
+.navbar__book-button {
+  background-color: #b8860b;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
 /*# sourceMappingURL=style.css.map */
