@@ -11,6 +11,17 @@
   @include responsive.respond(smallPhone) {
     height: 50vh;
   }
+  @include responsive.respond(phone) {
+    height: 50vh;
+  }
+
+  @include responsive.respond(tablets) {
+    height: 50vh;
+  }
+
+  @include responsive.respond(bigTablets) {
+    height: 70vh;
+  }
 
   &__track {
     display: flex;

@@ -9,6 +9,18 @@
     padding: 2rem;
   }
 
+  @include responsive.respond(phone) {
+    padding: 2rem;
+  }
+
+  @include responsive.respond(tablets) {
+    padding: 2rem;
+  }
+
+  @include responsive.respond(bigTablets) {
+    padding: 4rem;
+  }
+
   .dine-with-us-content {
     // max-width: 1200px;
     margin: 0 auto;

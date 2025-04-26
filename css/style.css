@@ -86,7 +86,22 @@ a {
 }
 @media only screen and (max-width: 575.98px) {
   .service {
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .service {
+    padding: 0rem 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .service {
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .service {
+    padding: 4rem;
   }
 }
 .service__container {
@@ -95,6 +110,16 @@ a {
   gap: 2rem;
 }
 @media only screen and (max-width: 575.98px) {
+  .service__container {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .service__container {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .service__container {
     flex-direction: column;
   }
@@ -110,6 +135,7 @@ a {
 @media only screen and (max-width: 575.98px) {
   .service__container__main {
     padding: 1rem;
+    gap: 0.5rem;
   }
 }
 .service__container__main__title {
@@ -130,11 +156,20 @@ a {
 .service__container__main__content__image {
   flex: 50%;
   height: 30rem;
-  background-color: #fff;
 }
 @media only screen and (max-width: 575.98px) {
   .service__container__main__content__image {
-    height: 20rem;
+    height: 14rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .service__container__main__content__image {
+    height: 14rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .service__container__main__content__image {
+    height: 14rem;
   }
 }
 .service__container__main__content__image img {
@@ -147,6 +182,11 @@ a {
   color: #fff;
   padding: 1.5rem;
 }
+@media only screen and (max-width: 575.98px) {
+  .service__container__main__content__description {
+    padding: 0.5rem;
+  }
+}
 .service__container__aside {
   display: flex;
   flex-direction: column;
@@ -155,11 +195,26 @@ a {
   padding: 2rem;
   background-color: #0a8046;
 }
+@media only screen and (max-width: 575.98px) {
+  .service__container__aside {
+    padding: 1rem;
+  }
+}
 .service__container__aside__image {
   height: 30rem;
   background-color: #fff;
 }
 @media only screen and (max-width: 575.98px) {
+  .service__container__aside__image {
+    height: 15rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .service__container__aside__image {
+    height: 16rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .service__container__aside__image {
     height: 20rem;
   }
@@ -168,6 +223,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .service__container__aside__title {
   font-size: 2rem;
@@ -196,6 +252,41 @@ a {
     height: 100vh;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .sticky-content-item {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .sticky-content-item {
+    height: 90vh;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .sticky-content-item {
+    height: 80vh;
+  }
+}
+
+.newHead {
+  text-align: center;
+  padding-left: 18%;
+}
+@media only screen and (max-width: 575.98px) {
+  .newHead {
+    padding-left: 0%;
+    text-align: left;
+  }
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 575.98px) {
+  .rowReverse {
+    flex-direction: column-reverse;
+  }
+}
 
 .discover-banner {
   background-color: #0a8046;
@@ -212,6 +303,29 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .discover-banner {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .discover-banner {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .discover-banner {
+    padding: 4rem;
   }
 }
 .discover-banner__title {
@@ -255,6 +369,16 @@ a {
     padding: 2rem;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .gallery {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .gallery {
+    padding: 3rem;
+  }
+}
 .gallery__container {
   display: flex;
   justify-content: center;
@@ -266,6 +390,18 @@ a {
   position: relative;
 }
 @media only screen and (max-width: 575.98px) {
+  .gallery__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .gallery__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .gallery__container {
     flex-direction: column;
     align-items: center;
@@ -325,6 +461,16 @@ a {
     padding: 0;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .gallery__image {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .gallery__image {
+    padding: 0;
+  }
+}
 .gallery__image img {
   width: 100%;
   height: 300px;
@@ -332,6 +478,11 @@ a {
 }
 .gallery__image--top {
   max-width: 400px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .gallery__image--top {
+    max-width: 100%;
+  }
 }
 .gallery__image--middle {
   max-width: 450px;
@@ -342,11 +493,32 @@ a {
     margin-left: 0;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .gallery__image--middle {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .gallery__image--middle {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
 .gallery__image--bottom {
   max-width: 450px;
   height: 300px;
 }
 @media only screen and (max-width: 575.98px) {
+  .gallery__image--bottom {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .gallery__image--bottom {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .gallery__image--bottom {
     width: 100%;
   }
@@ -369,6 +541,25 @@ a {
     position: static;
     width: 100%;
     height: 200px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .gallery .last {
+    position: static;
+    width: 100%;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .gallery .last {
+    position: static;
+    width: 100%;
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .gallery .last {
+    right: 0rem;
   }
 }
 .gallery .last img {
@@ -539,16 +730,6 @@ a {
   z-index: 100000;
 }
 @media only screen and (max-width: 575.98px) {
-  .navigation {
-    display: block;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .navigation {
-    display: block;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .navigation {
     display: block;
   }
@@ -831,6 +1012,21 @@ a {
     height: 50vh;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .hero-slider {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .hero-slider {
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-slider {
+    height: 70vh;
+  }
+}
 .hero-slider__track {
   display: flex;
   height: 100%;
@@ -854,6 +1050,21 @@ a {
 @media only screen and (max-width: 575.98px) {
   .room-suits-section {
     padding: 2rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .room-suits-section {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .room-suits-section {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .room-suits-section {
+    padding: 4rem;
   }
 }
 
@@ -881,6 +1092,20 @@ a {
     gap: 2rem;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .room-suits-container .room-suits-content {
+    flex-direction: column;
+    padding: 0 0.1rem;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .room-suits-container .room-suits-content {
+    flex-direction: column;
+    padding: 0 0.1rem;
+    gap: 2rem;
+  }
+}
 .room-suits-container .room-suits-content .room-suits-image {
   flex: 1;
 }
@@ -895,6 +1120,18 @@ a {
   width: 50%;
 }
 @media only screen and (max-width: 575.98px) {
+  .room-suits-container .room-suits-content .room-suits-text {
+    width: 100%;
+    padding: 1;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .room-suits-container .room-suits-content .room-suits-text {
+    width: 100%;
+    padding: 1;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .room-suits-container .room-suits-content .room-suits-text {
     width: 100%;
     padding: 1;
@@ -984,6 +1221,21 @@ a {
 @media only screen and (max-width: 575.98px) {
   .dine-with-us-container {
     padding: 2rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .dine-with-us-container {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .dine-with-us-container {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .dine-with-us-container {
+    padding: 4rem;
   }
 }
 .dine-with-us-container .dine-with-us-content {
@@ -1092,11 +1344,41 @@ a {
     padding: 2rem;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-container {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact-container {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-container {
+    padding: 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1699.98px) {
+  .contact-container {
+    padding: 4rem 9rem;
+  }
+}
 .contact-container .contact-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 @media only screen and (max-width: 575.98px) {
+  .contact-container .contact-header {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-container .contact-header {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .contact-container .contact-header {
     margin-bottom: 1rem;
   }
@@ -1137,6 +1419,21 @@ a {
 @media only screen and (max-width: 575.98px) {
   .contact-container .contact-content .contact-info {
     padding: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-container .contact-content .contact-info {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact-container .contact-content .contact-info {
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-container .contact-content .contact-info {
+    gap: 0rem;
   }
 }
 .contact-container .contact-content .contact-info .info-heading {
@@ -1182,6 +1479,12 @@ a {
   margin-top: 1rem;
   border-radius: 8px;
   overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact-container .contact-content .contact-info .map-container {
+    width: 100%;
+    height: 400px;
+  }
 }
 .contact-container .contact-content .contact-info .map-container iframe {
   width: 100%;
@@ -1241,6 +1544,16 @@ a {
     width: 100%;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .contact-container .contact-content .contact-form .submit-btn {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-container .contact-content .contact-form .submit-btn {
+    width: 100%;
+  }
+}
 .contact-container .contact-content .contact-form .submit-btn:hover {
   background-color: #0a8046;
 }
@@ -1264,6 +1577,21 @@ a {
     padding: 2rem;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .amenities-container {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .amenities-container {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .amenities-container {
+    padding: 4rem;
+  }
+}
 .amenities-container .amenities-content {
   margin: 0 auto;
   display: flex;
@@ -1274,6 +1602,19 @@ a {
   .amenities-container .amenities-content {
     flex-direction: column;
     padding: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .amenities-container .amenities-content {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .amenities-container .amenities-content {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
   }
 }
 .amenities-container .amenities-content .amenities-text {

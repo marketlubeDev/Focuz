@@ -4,7 +4,19 @@
   padding: 2rem 9rem;
 
   @include responsive.respond(smallPhone) {
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
+  }
+
+  @include responsive.respond(phone) {
+    padding: 0rem 1rem;
+  }
+
+  @include responsive.respond(tablets) {
+    padding: 1rem 1rem;
+  }
+
+  @include responsive.respond(bigTablets) {
+    padding: 4rem;
   }
 
   &__container {
@@ -16,6 +28,13 @@
       flex-direction: column;
     }
 
+    @include responsive.respond(phone) {
+      flex-direction: column;
+    }
+
+    @include responsive.respond(tablets) {
+      flex-direction: column;
+    }
     &__main {
       display: flex;
       flex-direction: column;
@@ -26,6 +45,7 @@
 
       @include responsive.respond(smallPhone) {
         padding: 1rem;
+        gap: 0.5rem;
       }
 
       &__title {
@@ -46,10 +66,18 @@
         &__image {
           flex: 50%;
           height: 30rem;
-          background-color: #fff;
+          // background-color: #fff;
 
           @include responsive.respond(smallPhone) {
-            height: 20rem;
+            height: 14rem;
+          }
+
+          @include responsive.respond(phone) {
+            height: 14rem;
+          }
+
+          @include responsive.respond(tablets) {
+            height: 14rem;
           }
 
           img {
@@ -63,6 +91,10 @@
           flex: 0 0 50%;
           color: #fff;
           padding: 1.5rem;
+
+          @include responsive.respond(smallPhone) {
+            padding: 0.5rem;
+          }
         }
       }
     }
@@ -74,11 +106,23 @@
       padding: 2rem;
       background-color: #0a8046;
 
+      @include responsive.respond(smallPhone) {
+        padding: 1rem;
+      }
+
       &__image {
         height: 30rem;
         background-color: #fff;
 
         @include responsive.respond(smallPhone) {
+          height: 15rem;
+        }
+
+        @include responsive.respond(phone) {
+          height: 16rem;
+        }
+
+        @include responsive.respond(tablets) {
           height: 20rem;
         }
 
@@ -86,6 +130,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          object-position: center;
         }
       }
 
@@ -116,5 +161,35 @@
     @include responsive.respond(smallPhone) {
       height: 100vh;
     }
+
+    @include responsive.respond(phone) {
+      height: 100vh;
+    }
+
+    @include responsive.respond(tablets) {
+      height: 90vh;
+    }
+
+    @include responsive.respond(bigTablets) {
+      height: 80vh;
+    }
+  }
+}
+
+.newHead {
+  text-align: center;
+  padding-left: 18%;
+
+  @include responsive.respond(smallPhone) {
+    padding-left: 0%;
+    text-align: left;
+  }
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+
+  @include responsive.respond(smallPhone) {
+    flex-direction: column-reverse;
   }
 }

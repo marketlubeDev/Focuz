@@ -9,6 +9,18 @@
     padding: 2rem;
   }
 
+  @include responsive.respond(phone) {
+    padding: 2rem;
+  }
+
+  @include responsive.respond(tablets) {
+    padding: 2rem;
+  }
+
+  @include responsive.respond(bigTablets) {
+    padding: 4rem;
+  }
+
   .amenities-content {
     // max-width: 1200px;
     margin: 0 auto;
@@ -21,6 +33,16 @@
       padding: 0;
     }
 
+    @include responsive.respond(phone) {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    @include responsive.respond(tablets) {
+      flex-direction: column;
+      padding: 0;
+      gap: 2rem;
+    }
     .amenities-text {
       flex: 1;
       padding: 2rem;

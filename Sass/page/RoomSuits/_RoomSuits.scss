@@ -8,6 +8,18 @@
   @include responsive.respond(smallPhone) {
     padding: 2rem;
   }
+
+  @include responsive.respond(phone) {
+    padding: 2rem;
+  }
+
+  @include responsive.respond(tablets) {
+    padding: 2rem;
+  }
+
+  @include responsive.respond(bigTablets) {
+    padding: 4rem;
+  }
 }
 
 .room-suits-container {
@@ -26,6 +38,18 @@
     padding: 0 3rem;
 
     @include responsive.respond(smallPhone) {
+      flex-direction: column;
+      padding: 0 0.1rem;
+      gap: 2rem;
+    }
+
+    @include responsive.respond(phone) {
+      flex-direction: column;
+      padding: 0 0.1rem;
+      gap: 2rem;
+    }
+
+    @include responsive.respond(tablets) {
       flex-direction: column;
       padding: 0 0.1rem;
       gap: 2rem;
@@ -50,6 +74,17 @@
         width: 100%;
         padding: 1;
       }
+
+      @include responsive.respond(phone) {
+        width: 100%;
+        padding: 1;
+      }
+
+      @include responsive.respond(tablets) {
+        width: 100%;
+        padding: 1;
+      }
+
       .stay-with-us {
         font-size: 1.5rem;
         color: #0a8046;

@@ -148,12 +148,6 @@
   @include responsive.respond(smallPhone) {
     display: block;
   }
-  @include responsive.respond(tablets) {
-    display: block;
-  }
-  @include responsive.respond(phone) {
-    display: block;
-  }
 }
 .navigation__checkbox {
   position: absolute;

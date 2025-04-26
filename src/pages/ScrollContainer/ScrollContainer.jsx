@@ -67,19 +67,16 @@ export default function Service() {
               </div>
               <div className="service__container__main">
                 <h2
-                  className="service__container__main__title"
-                  style={{
-                    textAlign: "center",
-                    paddingLeft: "18%",
-                  }}
+                  className="service__container__main__title newHead"
+                  style={{}}
                 >
                   Ayurveda
                 </h2>
                 <div
-                  className="service__container__main__content"
-                  style={{
-                    flexDirection: "row-reverse",
-                  }}
+                  className="service__container__main__content rowReverse"
+                  // style={{
+                  //   flexDirection: "row-reverse",
+                  // }}
                 >
                   <div className="service__container__main__content__image">
                     <img
