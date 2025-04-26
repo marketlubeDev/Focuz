@@ -81,7 +81,7 @@ export default function Service() {
                   <div className="service__container__main__content__image">
                     <img
                       src={
-                        "https://res.cloudinary.com/dznxxalrb/image/upload/v1745679469/29e115a66fa97268038bf3eaac51390a5e038cd6_1_i9gdfx.jpg"
+                        "https://res.cloudinary.com/dznxxalrb/image/upload/v1745683380/29e115a66fa97268038bf3eaac51390a5e038cd6_1_p3k7yv.jpg"
                       }
                       alt="service"
                     />
