@@ -1,0 +1,28 @@
+.discover-banner {
+  background-color: #0a8046;
+  padding: 4rem 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  &__title {
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__button {
+    background-color: #b58800;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.2rem;
+    // border-radius: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #fff;
+      color: #b58800;
+    }
+  }
+}

@@ -65,7 +65,7 @@ a {
 }
 
 .service {
-  padding: 2rem 4rem;
+  padding: 2rem 9rem;
 }
 .service__container {
   display: flex;
@@ -126,6 +126,34 @@ a {
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
+}
+
+.discover-banner {
+  background-color: #0a8046;
+  padding: 4rem 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.discover-banner__title {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+.discover-banner__button {
+  background-color: #b58800;
+  color: #fff;
+  border: none;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.discover-banner__button:hover {
+  background-color: #fff;
+  color: #b58800;
 }
 
 /*# sourceMappingURL=style.css.map */
