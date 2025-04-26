@@ -70,3 +70,20 @@
     }
   }
 }
+
+.sectionFive {
+  height: fit-content;
+  background-color: white;
+}
+.sticky-content {
+  height: 300vh;
+  width: 100%;
+  position: relative;
+
+  &-item {
+    height: 90vh;
+    width: 100%;
+    position: sticky;
+    top: 2rem;
+  }
+}
