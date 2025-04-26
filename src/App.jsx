@@ -18,7 +18,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        {/* <ScrollContainer /> */}
+        <ScrollContainer />
         <RoomSuits />
         <Amenities />
         <DineWithUs />
