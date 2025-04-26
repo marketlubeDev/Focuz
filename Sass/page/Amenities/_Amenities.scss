@@ -1,0 +1,109 @@
+.amenities-container {
+  background-color: #0a8046;
+  padding: 4rem 0;
+  color: white;
+
+  .amenities-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    padding: 0 1rem;
+
+    .amenities-text {
+      flex: 1;
+      padding: 2rem;
+
+      .stay-with-us {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .amenities-heading {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        color: white;
+      }
+
+      .amenities-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .contact-btn {
+        background-color: white;
+        color: #0a8046;
+        border: 2px solid #ca8e1e;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+
+        &:hover {
+          background-color: #ca8e1e;
+          color: white;
+        }
+      }
+    }
+
+    .amenities-list {
+      flex: 1;
+      display: flex;
+      
+      gap: 2rem;
+      padding: 4rem 2rem;
+
+      .list-column {
+        flex: 1;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            .circle-icon {
+              color: white;
+              font-size: 0.8rem;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .amenities-content {
+    flex-direction: column;
+    gap: 2rem;
+
+    .amenities-text {
+      text-align: center;
+      padding: 1rem;
+
+      .contact-btn {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    .amenities-list {
+      padding: 1rem;
+    }
+  }
+}

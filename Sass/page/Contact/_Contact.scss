@@ -1,0 +1,138 @@
+.contact-container {
+  padding: 4rem 0;
+
+  .contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .get-in-touch {
+      font-size: 1.2rem;
+font-weight: 600;      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .contact-heading {
+      font-size: 2.5rem;
+      color: black;
+      margin: 0;
+    }
+  }
+
+  .contact-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    padding: 0 1rem;
+
+    .contact-info {
+      flex: 1;
+      padding: 2rem;
+
+      .info-heading {
+        font-size: 1.2rem;
+        color: #ca8e1e;
+        margin-bottom: 2rem;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        i {
+          font-size: 1.5rem;
+          color: #0a8046;
+          margin-right: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: #333;
+          margin: 0;
+        }
+      }
+
+      .map-container {
+        width: 300px;
+        height: 300px;
+        margin-top: 1rem;
+        border-radius: 8px;
+        overflow: hidden;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      }
+    }
+
+    .contact-form {
+      flex: 1;
+      padding: 2rem;
+
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          color: #333;
+          font-weight: 500;
+        }
+
+        input, textarea {
+          width: 100%;
+          padding: 0.8rem;
+          border: 1px solid #221e1e;
+          border-radius: 4px;
+          font-size: 1rem;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            outline: none;
+            border-color: #0a8046;
+          }
+        }
+
+        textarea {
+          resize: vertical;
+          height: 150px;
+        }
+      }
+
+      .submit-btn {
+        background-color: #ca8e1e;
+        color: white;
+        border: 2px solid #0a8046;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        margin-left: 320px;
+       
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #0a8046;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+
+    .contact-info {
+      .map-container {
+        height: 250px;
+      }
+    }
+  }
+} 

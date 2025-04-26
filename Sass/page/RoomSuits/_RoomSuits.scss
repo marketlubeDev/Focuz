@@ -1,0 +1,105 @@
+
+.room-suits-section {
+  background-color: white;
+  padding: 4rem 9rem;
+  width: 100%;
+}
+
+.room-suits-container {
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+  width: 100%;
+
+  .room-suits-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+
+    .room-suits-image {
+      flex: 1;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+
+    .room-suits-text {
+      flex: 1;
+      padding: 2rem;
+
+      .stay-with-us {
+        font-size: 0.9rem;
+        color: #0a8046;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .room-suits-heading {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        color: #0a8046;      }
+
+      .room-suits-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      .room-suits-buttons {
+        display: flex;
+        gap: 1rem;
+
+        button {
+          padding: 0.8rem 1.5rem;
+          border: none;
+          border-radius: 4px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &.book-now-btn {
+            background-color: transparent;
+            border: 2px solid   #ca8e1e;;
+            color: #333;
+
+            &:hover {
+              background-color: #444;
+            }
+          }
+
+          &.learn-more-btn {
+            background-color: transparent;
+            border: 2px solid   #0a8046;;
+            color: #333;
+
+            &:hover {
+              background-color: #333;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .room-suits-content {
+    flex-direction: column;
+    
+    .room-suits-text {
+      text-align: center;
+      
+      .room-suits-buttons {
+        justify-content: center;
+      }
+    }
+  }
+}
