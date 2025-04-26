@@ -1,10 +1,10 @@
 .amenities-container {
   background-color: #0a8046;
-  padding: 4rem 0;
+  padding: 4rem 9rem;
   color: white;
 
   .amenities-content {
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
     display: flex;
     gap: 4rem;
@@ -56,7 +56,7 @@
     .amenities-list {
       flex: 1;
       display: flex;
-      
+
       gap: 2rem;
       padding: 4rem 2rem;
 

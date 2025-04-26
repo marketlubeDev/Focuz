@@ -302,10 +302,9 @@ a {
 .hero-slider {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 85vh;
   overflow: hidden;
   margin: 0 auto;
-  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .hero-slider__track {
@@ -335,12 +334,11 @@ a {
   width: 100%;
 }
 .room-suits-container .room-suits-content {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 0 1rem;
+  gap: 8rem;
+  padding: 0 3rem;
 }
 .room-suits-container .room-suits-content .room-suits-image {
   flex: 1;
@@ -348,29 +346,31 @@ a {
 .room-suits-container .room-suits-content .room-suits-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
   object-fit: cover;
 }
 .room-suits-container .room-suits-content .room-suits-text {
-  flex: 1;
+  flex: 1.1;
   padding: 2rem;
+  width: 50%;
 }
 .room-suits-container .room-suits-content .room-suits-text .stay-with-us {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   color: #0a8046;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 .room-suits-container .room-suits-content .room-suits-text .room-suits-heading {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin: 1rem 0;
   color: #0a8046;
 }
 .room-suits-container .room-suits-content .room-suits-text .room-suits-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
-  color: #666;
+  color: #000;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 .room-suits-container .room-suits-content .room-suits-text .room-suits-buttons {
   display: flex;
@@ -415,11 +415,10 @@ a {
 }
 .dine-with-us-container {
   background-color: #f5f5f5;
-  padding: 4rem 0;
+  padding: 4rem 9rem;
   width: 100%;
 }
 .dine-with-us-container .dine-with-us-content {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -490,26 +489,26 @@ a {
   }
 }
 .contact-container {
-  padding: 4rem 0;
+  padding: 4rem 9rem;
+  border-bottom: 5rem solid #0a8046;
 }
 .contact-container .contact-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 .contact-container .contact-header .get-in-touch {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 1px;
   display: block;
   margin-bottom: 1rem;
 }
 .contact-container .contact-header .contact-heading {
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: black;
   margin: 0;
 }
 .contact-container .contact-content {
-  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   gap: 4rem;
@@ -520,14 +519,14 @@ a {
   padding: 2rem;
 }
 .contact-container .contact-content .contact-info .info-heading {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #ca8e1e;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .contact-container .contact-content .contact-info .info-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .contact-container .contact-content .contact-info .info-item i {
   font-size: 1.5rem;
@@ -535,9 +534,10 @@ a {
   margin-right: 1rem;
 }
 .contact-container .contact-content .contact-info .info-item p {
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 1.4rem;
+  color: #000;
   margin: 0;
+  font-weight: 500;
 }
 .contact-container .contact-content .contact-info .map-container {
   width: 300px;
@@ -565,7 +565,8 @@ a {
   color: #333;
   font-weight: 500;
 }
-.contact-container .contact-content .contact-form .form-group input, .contact-container .contact-content .contact-form .form-group textarea {
+.contact-container .contact-content .contact-form .form-group input,
+.contact-container .contact-content .contact-form .form-group textarea {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #221e1e;
@@ -573,7 +574,8 @@ a {
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
-.contact-container .contact-content .contact-form .form-group input:focus, .contact-container .contact-content .contact-form .form-group textarea:focus {
+.contact-container .contact-content .contact-form .form-group input:focus,
+.contact-container .contact-content .contact-form .form-group textarea:focus {
   outline: none;
   border-color: #0a8046;
 }
@@ -585,10 +587,10 @@ a {
   background-color: #ca8e1e;
   color: white;
   border: 2px solid #0a8046;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   border-radius: 4px;
-  margin-left: 320px;
+  width: 20%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -607,11 +609,10 @@ a {
 }
 .amenities-container {
   background-color: #0a8046;
-  padding: 4rem 0;
+  padding: 4rem 9rem;
   color: white;
 }
 .amenities-container .amenities-content {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 4rem;
