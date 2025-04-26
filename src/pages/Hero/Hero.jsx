@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  'https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg',
-  'https://images.unsplash.com/photo-1560179707-f14e90ef3623?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2ZmaWNlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D',
-  'https://media.istockphoto.com/id/517374252/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=mC7RfqWnNBEkmfbem-cHjd7O10XbiZ0SCfJuIZkmfKg=',
+  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/asdfghjk_kyz0kf.jpg",
+  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/asdfghj_xnh5ca.jpg",
+  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/sdfghjk_sb9lg5.jpg",
+  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/wertyuiop_aoq83f.jpg",
 ];
 
 const Hero = () => {
@@ -38,7 +39,7 @@ const Hero = () => {
         ref={trackRef}
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
-          transition: isAnimating ? 'transform 0.8s ease-in-out' : 'none',
+          transition: isAnimating ? "transform 0.8s ease-in-out" : "none",
         }}
       >
         {images.map((img, index) => (
