@@ -6,9 +6,9 @@ import Amenities from "./pages/Amenities/Amenities";
 import RoomSuits from "./pages/RoomSuits/RoomSuits";
 import DineWithUs from "./pages/DineWithUs/DineWithUs";
 import DiscoverBanner from "./pages/DiscoverBanner/DiscoverBanner";
-import Gallery from "./pages/Gallery/Gallery";
 import Footer from "./pages/Components/Footer";
 import ScrollContainer from "./pages/ScrollContainer/ScrollContainer";
+import Gallery from "./pages/Gallery/Gallery";
 function App() {
   return (
     <>
