@@ -38,7 +38,14 @@ const Gallery = () => {
               and mind.Our centre is a serene space to unwind, recharge, and
               heal deeply.
             </p>
-            <button className="gallery__button">Contact</button>
+            <a
+              href="https://wa.me/918592011120"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gallery__button"
+            >
+              Contact
+            </a>
           </div>
         </div>
 

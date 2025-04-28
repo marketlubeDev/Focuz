@@ -106,6 +106,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 0.5rem;
+        gap: 1rem;
 
         @include responsive.respond(smallPhone) {
           margin-bottom: 0.2rem;
@@ -126,12 +127,16 @@
           @include responsive.respond(smallPhone) {
             font-size: 1rem;
           }
+
+          &:hover {
+            color: #ca8e1e;
+          }
         }
       }
 
       .map-container {
-        width: 300px;
-        height: 300px;
+        width: 600px;
+        height: 380px;
         margin-top: 1rem;
         border-radius: 8px;
         overflow: hidden;
@@ -154,6 +159,16 @@
         @include responsive.respond(bigTablets) {
           width: 100%;
           // height: 400px;
+        }
+
+        @include responsive.respond(bigDesktop) {
+          width: 100%;
+          height: 350px;
+        }
+
+        @include responsive.respond(desktop) {
+          width: 100%;
+          height: 350px;
         }
 
         iframe {
@@ -211,7 +226,7 @@
         padding: 1rem 2rem;
         font-size: 1rem;
         border-radius: 4px;
-        width: 20%;
+        // width: 20%;
         cursor: pointer;
         transition: all 0.3s ease;
 

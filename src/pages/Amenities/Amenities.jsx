@@ -16,7 +16,14 @@ export default function Amenities() {
             ensuring a restful stay. Enjoy world-class amenities and
             rejuvenating services, making your time with us truly memorable.
           </p>
-          <button className="contact-btn">Contact</button>
+          <a
+            href="https://wa.me/918592011120"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-btn"
+          >
+            Contact
+          </a>
         </div>
 
         <div className="amenities-list">

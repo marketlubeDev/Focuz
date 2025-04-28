@@ -88,13 +88,14 @@
   &__button {
     padding: 0.75rem 1.5rem;
     background: none;
-    border: 1px solid #2a8c56;
+    border: 2px solid #2a8c56;
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
 
     &:hover {
-      background-color: #f0f0f0;
+      background-color: #ca8e1e;
+      color: white;
     }
   }
 

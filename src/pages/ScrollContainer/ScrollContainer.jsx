@@ -38,7 +38,7 @@ export default function Service() {
                     alt="service"
                   />
                 </div>
-                <p className="service__container__aside__title">Lorem ipsum</p>
+                {/* <p className="service__container__aside__title">Lorem ipsum</p> */}
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function Service() {
                     alt="service"
                   />
                 </div>
-                <p className="service__container__aside__title">Lorem ipsum</p>
+                {/* <p className="service__container__aside__title">Lorem ipsum</p> */}
               </div>
               <div className="service__container__main">
                 <h2
@@ -136,7 +136,7 @@ export default function Service() {
                     alt="service"
                   />
                 </div>
-                <p className="service__container__aside__title">Lorem ipsum</p>
+                {/* <p className="service__container__aside__title">Lorem ipsum</p> */}
               </div>
             </div>
           </div>

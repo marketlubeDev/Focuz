@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -12,15 +13,15 @@ export default function Contact() {
         <div className="contact-info">
           <h3 className="info-heading">Get in touch</h3>
           <div className="info-item">
-            <i className="fas fa-phone"></i>
+            <FaPhone className="icon" />
             <p>
-              <a href="tel:+911234567890">+91 1234567890</a>
+              <a href="tel:+918592011120">+91 85920 11120</a>
             </p>
           </div>
           <div className="info-item">
-            <i className="fas fa-envelope"></i>
+            <FaEnvelope className="icon" />
             <p>
-              <a href="mailto:info@focuz.com">info@focuz.com</a>
+              <a href="mailto:info@focuz.com">enquiry.focuzhabitat@gmail.com</a>
             </p>
           </div>
 

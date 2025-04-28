@@ -20,7 +20,14 @@ export default function RoomSuits() {
               rooms provide the perfect retreat.
             </p>
             <div className="room-suits-buttons">
-              <button className="book-now-btn">Book Now</button>
+              <a
+                href="https://wa.me/c/918592011120"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="book-now-btn"
+              >
+                Book Now
+              </a>
               <button className="learn-more-btn">Learn More</button>
             </div>
           </div>

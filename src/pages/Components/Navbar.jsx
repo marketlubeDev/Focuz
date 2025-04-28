@@ -98,9 +98,10 @@ export default function Navbar() {
           {/* Book now button */}
           <div>
             <a
-              href="#contact"
+              href="https://wa.me/c/918592011120"
               className="navbar__book-button"
-              onClick={(e) => scrollToSection(e, "contact")}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book now
             </a>

@@ -14,7 +14,14 @@ export default function DineWithUs() {
             every palate.
           </p>
           <div className="dine-with-us-buttons">
-            <button className="contact-btn">Contact</button>
+            <a
+              href="https://wa.me/918592011120"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-btn"
+            >
+              Contact
+            </a>
           </div>
         </div>
         <div className="dine-with-us-image">
