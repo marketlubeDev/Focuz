@@ -1,7 +1,7 @@
 @use "../../base/responsive" as responsive;
 .contact-container {
   padding: 4rem 9rem;
-  border-bottom: 5rem solid #0a8046;
+  border-bottom: 3rem solid #0a8046;
 
   @include responsive.respond(smallPhone) {
     padding: 2rem;
@@ -194,7 +194,7 @@
           display: block;
           margin-bottom: 0.5rem;
           font-size: 1rem;
-          color: #333;
+          color: #636363;
           font-weight: 500;
         }
 
@@ -202,8 +202,8 @@
         textarea {
           width: 100%;
           padding: 0.8rem;
-          border: 1px solid #221e1e;
-          border-radius: 4px;
+          border: 1px solid #292929;
+          // border-radius: 4px;
           font-size: 1rem;
           transition: border-color 0.3s ease;
 

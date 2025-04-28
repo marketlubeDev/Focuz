@@ -55,9 +55,11 @@ export default function Contact() {
               <label htmlFor="message">Message:</label>
               <textarea id="message" rows="4" required></textarea>
             </div>
-            <button type="submit" className="submit-btn">
-              Submit
-            </button>
+            <div className="form-group" style={{ textAlign: "END" }}>
+              <button type="submit" className="submit-btn">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>

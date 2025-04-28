@@ -24,7 +24,7 @@
 
 .room-suits-container {
   background-color: #f5f5f5;
-  padding: 4rem 0;
+  padding: 3rem 0;
   width: 100%;
 
   @include responsive.respond(smallPhone) {
@@ -60,9 +60,25 @@
 
       img {
         width: 100%;
-        height: auto;
+        height: 30rem;
         // border-radius: 8px;
         object-fit: cover;
+
+        @include responsive.respond(smallPhone) {
+          height: fit-content;
+        }
+
+        @include responsive.respond(phone) {
+          height: fit-content;
+        }
+
+        @include responsive.respond(tablets) {
+          height: fit-content;
+        }
+
+        @include responsive.respond(bigTablets) {
+          height: fit-content;
+        }
       }
     }
 
@@ -132,6 +148,16 @@
           font-size: 1rem;
           cursor: pointer;
           transition: all 0.3s ease;
+
+          @include responsive.respond(smallPhone) {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+          }
+
+          @include responsive.respond(phone) {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+          }
 
           &.book-now-btn {
             background-color: transparent;

@@ -1,6 +1,8 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 export default function Service() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <div className="sectionFive" id="services">
       <div className="sticky-content">
@@ -48,7 +50,7 @@ export default function Service() {
           style={{ backgroundColor: "white" }}
         >
           <div className="service">
-            <div className="service__container">
+            <div className="service__container mobileser">
               <div
                 className="service__container__aside"
                 style={{
@@ -81,7 +83,9 @@ export default function Service() {
                   <div className="service__container__main__content__image">
                     <img
                       src={
-                        "https://res.cloudinary.com/dznxxalrb/image/upload/v1745683380/29e115a66fa97268038bf3eaac51390a5e038cd6_1_p3k7yv.jpg"
+                        isMobile
+                          ? "https://res.cloudinary.com/dznxxalrb/image/upload/v1745833615/29e115a66fa97268038bf3eaac51390a5e038cd6_1_p3k7yv.jpg"
+                          : "https://res.cloudinary.com/dznxxalrb/image/upload/v1745834068/29e115a66fa97268038bf3eaac51390a5e038cd6_1_a0flen.jpg"
                       }
                       alt="service"
                     />

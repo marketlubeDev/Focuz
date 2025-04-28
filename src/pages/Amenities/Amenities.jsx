@@ -44,6 +44,15 @@ export default function Amenities() {
               <li>
                 <FaRegCircle className="circle-icon" /> Indoor Games
               </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Yoga
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> Car Parking
+              </li>
+              <li>
+                <FaRegCircle className="circle-icon" /> 24×7 Power Backup
+              </li>
             </ul>
           </div>
           <div className="list-column">
@@ -63,19 +72,6 @@ export default function Amenities() {
               <li>
                 <FaRegCircle className="circle-icon" /> Steam and Sauna
               </li>
-            </ul>
-          </div>
-          <div className="list-column">
-            <ul>
-              <li>
-                <FaRegCircle className="circle-icon" /> Yoga
-              </li>
-              <li>
-                <FaRegCircle className="circle-icon" /> Car Parking
-              </li>
-              <li>
-                <FaRegCircle className="circle-icon" /> 24×7 Power Backup
-              </li>
               <li>
                 <FaRegCircle className="circle-icon" /> CCTV Covered Premises
               </li>
@@ -84,6 +80,9 @@ export default function Amenities() {
               </li>
             </ul>
           </div>
+          {/* <div className="list-column">
+              <ul></ul>
+            </div> */}
         </div>
       </div>
     </div>
