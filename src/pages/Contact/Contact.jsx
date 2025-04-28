@@ -40,19 +40,19 @@ export default function Contact() {
         <div className="contact-form">
           <form>
             <div className="form-group">
-              <label htmlFor="name">Your Name</label>
+              <label htmlFor="name">Your Name:</label>
               <input type="text" id="name" required />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Contact Number</label>
+              <label htmlFor="phone">Contact Number:</label>
               <input type="tel" id="phone" required />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Mail ID</label>
+              <label htmlFor="email">Mail ID:</label>
               <input type="email" id="email" required />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Message:</label>
               <textarea id="message" rows="4" required></textarea>
             </div>
             <button type="submit" className="submit-btn">

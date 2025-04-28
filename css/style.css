@@ -92,6 +92,11 @@ a {
 .service {
   padding: 2rem 9rem;
 }
+@media screen and (max-width: 375px) {
+  .service {
+    padding: 0;
+  }
+}
 @media only screen and (max-width: 575.98px) {
   .service {
     padding: 0rem 1rem;

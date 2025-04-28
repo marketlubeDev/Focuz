@@ -2,7 +2,9 @@
 
 .service {
   padding: 2rem 9rem;
-
+  @media screen and (max-width: 375px) {
+    padding: 0;
+  }
   @include responsive.respond(smallPhone) {
     padding: 0rem 1rem;
   }
