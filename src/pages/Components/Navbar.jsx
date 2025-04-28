@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import Logo from "../../assets/img42.jpg";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleNavigation = (path) => {
+    setIsChecked(false);
+    navigate(path);
   };
 
   return (
@@ -16,13 +23,21 @@ export default function Navbar() {
         <div className="navbar__content">
           {/* Left side menu items */}
           <div className="navbar__menu">
-            <a
+            {/* <a
               href="#about"
               className="navbar__menu-link"
               onClick={(e) => scrollToSection(e, "about")}
             >
               About Us
-            </a>
+            </a> */}
+
+            <Link
+              to="/about"
+              className="navbar__menu-link"
+              onClick={() => handleNavigation("/about")}
+            >
+              About Us
+            </Link>
             <a
               href="#services"
               className="navbar__menu-link"
@@ -63,15 +78,9 @@ export default function Navbar() {
                 aria-label="Main navigation links"
               >
                 <li className="navigation__item">
-                  <a
-                    href="#about"
-                    onClick={(e) => {
-                      scrollToSection(e, "about");
-                      setIsChecked(false);
-                    }}
-                  >
+                  <Link to="/about" onClick={() => handleNavigation("/about")}>
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="navigation__item">
                   <a
@@ -90,9 +99,9 @@ export default function Navbar() {
 
           {/* Logo in center */}
           <div className="navbar__logo">
-            <a href="#home">
+            <Link to="/">
               <img src={Logo} alt="Focuz Habitat" />
-            </a>
+            </Link>
           </div>
 
           {/* Book now button */}
