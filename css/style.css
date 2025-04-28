@@ -584,7 +584,7 @@ a {
 
 .navbar {
   background-color: white;
-  border-bottom: 0.7rem solid #0a8046;
+  border-bottom: 0.5rem solid #0a8046;
 }
 .navbar__container {
   margin: 0 auto;
@@ -628,7 +628,7 @@ a {
 }
 .navbar__menu {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .navbar__menu {

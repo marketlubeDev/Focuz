@@ -44,12 +44,48 @@ const Hero = () => {
       >
         {images.map((img, index) => (
           <div key={index} className="hero-slider__slide">
-            <img src={img} alt={`Slide ${index + 1}`} />
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              <img src={img} alt={`Slide ${index + 1}`} />
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                }}
+              />
+            </div>
           </div>
         ))}
         {/* Clone first slide at end */}
         <div className="hero-slider__slide">
-          <img src={images[0]} alt="Slide 1 clone" />
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <img src={images[0]} alt="Slide 1 clone" />
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>
