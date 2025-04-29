@@ -375,7 +375,7 @@ a {
 }
 @media only screen and (max-width: 575.98px) {
   .sticky-content {
-    height: 200vh;
+    height: 280vh;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -396,7 +396,7 @@ a {
 }
 @media only screen and (max-width: 575.98px) {
   .sticky-content-item {
-    height: 70vh;
+    height: 75vh;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -1266,12 +1266,12 @@ a {
 }
 @media only screen and (max-width: 575.98px) {
   .room-suits-container .room-suits-content .room-suits-image img {
-    height: fit-content;
+    height: 13rem;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .room-suits-container .room-suits-content .room-suits-image img {
-    height: fit-content;
+    height: 13rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {

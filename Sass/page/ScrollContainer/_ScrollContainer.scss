@@ -165,7 +165,7 @@
   }
 
   @include responsive.respond(smallPhone) {
-    height: 200vh;
+    height: 280vh;
   }
 
   @include responsive.respond(phone) {
@@ -183,7 +183,7 @@
     }
 
     @include responsive.respond(smallPhone) {
-      height: 70vh;
+      height: 75vh;
     }
 
     @include responsive.respond(phone) {
