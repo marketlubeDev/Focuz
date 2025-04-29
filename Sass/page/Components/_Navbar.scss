@@ -395,3 +395,15 @@
     transition: color 0.3s;
   }
 }
+
+.navbar__book-button-mobile {
+  background-color: #b8860b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}

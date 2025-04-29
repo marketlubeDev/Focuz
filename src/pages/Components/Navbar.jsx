@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../../assets/img42.jpg";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isChecked) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isChecked]);
 
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
@@ -33,14 +45,6 @@ export default function Navbar() {
         <div className="navbar__content">
           {/* Left side menu items */}
           <div className="navbar__menu">
-            {/* <a
-              href="#about"
-              className="navbar__menu-link"
-              onClick={(e) => scrollToSection(e, "about")}
-            >
-              About Us
-            </a> */}
-
             <Link
               to="/about"
               className="navbar__menu-link"
@@ -97,6 +101,26 @@ export default function Navbar() {
                     Services
                   </a>
                 </li>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "20px",
+                    position: "fixed",
+                    bottom: "10%",
+                    width: "100%",
+                    left: "0",
+                  }}
+                >
+                  <a
+                    href="https://wa.me/c/918592011120"
+                    className="navbar__book-button-mobile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book Now
+                  </a>
+                </div>
               </ul>
             </nav>
           </div>
@@ -115,9 +139,7 @@ export default function Navbar() {
               className="navbar__book-button"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              Book now
-            </a>
+            ></a>
           </div>
         </div>
       </div>

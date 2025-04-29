@@ -25,7 +25,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <h3 className="info-heading">Location</h3>
+          <h3 className="info-heading locationHead">Location</h3>
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d978.8816357523366!2d76.077036869611!3d11.074079815451494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64bc0aa73aed3%3A0xe7d4428d5884c412!2sFocuz%20Habitat!5e0!3m2!1sen!2sin!4v1745660846668!5m2!1sen!2sin"

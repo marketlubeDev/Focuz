@@ -95,8 +95,9 @@
 
         &__description {
           flex: 0 0 50%;
-          color: #fff;
-          padding: 1.5rem;
+          color: #e1e1e1;
+          padding: 0 1.5rem;
+          font-size: 1.2rem;
 
           @include responsive.respond(smallPhone) {
             padding: 0.8rem 0;
@@ -183,7 +184,7 @@
     }
 
     @include responsive.respond(smallPhone) {
-      height: 75vh;
+      height: 65vh;
     }
 
     @include responsive.respond(phone) {
