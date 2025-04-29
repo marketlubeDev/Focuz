@@ -1,10 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/asdfghjk_kyz0kf.jpg",
-  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/asdfghj_xnh5ca.jpg",
-  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/sdfghjk_sb9lg5.jpg",
-  "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/wertyuiop_aoq83f.jpg",
+  // Base set of 4 images repeated 10 times
+  ...Array(10)
+    .fill([
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/asdfghjk_kyz0kf.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/asdfghj_xnh5ca.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/sdfghjk_sb9lg5.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1745664552/wertyuiop_aoq83f.jpg",
+    ])
+    .flat(),
 ];
 
 const Hero = () => {
@@ -23,10 +28,14 @@ const Hero = () => {
   useEffect(() => {
     if (currentIndex === images.length) {
       // When we reach the cloned slide
-      setTimeout(() => {
-        setIsAnimating(false);
-        setCurrentIndex(0);
-      }, 800); // Wait till transition finishes
+      setIsAnimating(false); // Remove transition immediately
+      setCurrentIndex(0);
+      // Add a small delay before re-enabling transitions
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setIsAnimating(true);
+        });
+      });
     } else {
       setIsAnimating(true);
     }
