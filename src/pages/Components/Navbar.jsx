@@ -17,6 +17,16 @@ export default function Navbar() {
     navigate(path);
   };
 
+  const handleServicesClick = (e) => {
+    e.preventDefault();
+    if (window.location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "services" } });
+    } else {
+      scrollToSection(e, "services");
+    }
+    setIsChecked(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar__container">
@@ -41,7 +51,7 @@ export default function Navbar() {
             <a
               href="#services"
               className="navbar__menu-link"
-              onClick={(e) => scrollToSection(e, "services")}
+              onClick={handleServicesClick}
             >
               Services
             </a>
@@ -83,13 +93,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="navigation__item">
-                  <a
-                    href="#services"
-                    onClick={(e) => {
-                      scrollToSection(e, "services");
-                      setIsChecked(false);
-                    }}
-                  >
+                  <a href="#services" onClick={handleServicesClick}>
                     Services
                   </a>
                 </li>

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./pages/Components/Navbar";
 import Hero from "./pages/Hero/Hero";
 import About from "./pages/About/About";
@@ -13,6 +13,15 @@ import Gallery from "./pages/Gallery/Gallery";
 import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const element = document.getElementById(location.state.scrollTo);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
     <>
       <header>
